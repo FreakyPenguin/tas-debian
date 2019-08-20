@@ -1,0 +1,16 @@
+Source: tas
+Section: net
+Priority: optional
+Maintainer: Antoine Kaufmann <antoinek@mpi-sws.org>
+Build-Depends: debhelper (>= 10), libpcap-dev, libnuma-dev, libdpdk-dev (>= 17)
+Standards-Version: 4.1.2
+Homepage: https://tcp-acceleration-service.github.io/
+Vcs-Git: https://github.com/tcp-acceleration-service/tas.git
+Vcs-Browser: https://github.com/tcp-acceleration-service/tas
+
+Package: tas
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: TCP Acceleration Service
+ TAS is a drop-in highly CPU efficient and scalable TCP acceleration service
+ for multi-tenant environments.
